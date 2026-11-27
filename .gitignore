@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+/.next/
+/next-env.d.ts
+*.tsbuildinfo
+npm-debug.log*
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+/supabase/.temp/
+/supabase/.branches/

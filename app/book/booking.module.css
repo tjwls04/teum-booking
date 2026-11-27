@@ -1,0 +1,82 @@
+.main {
+  max-width: 640px;
+  min-height: calc(100svh - 154px);
+  padding-block: clamp(32px, 7vw, 72px);
+}
+
+.content {
+  display: grid;
+  gap: 24px;
+}
+
+.header h1 {
+  font-size: clamp(31px, 6vw, 48px);
+}
+
+.section {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+  border-top: 1px solid var(--color-rule);
+  padding-block: 18px 4px;
+}
+
+.section legend {
+  padding-right: 12px;
+  color: var(--color-pine);
+  font-weight: 700;
+}
+
+.times {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 8px;
+}
+
+.time {
+  min-height: 44px;
+  border: 1px solid var(--color-rule);
+  color: var(--color-pine);
+}
+
+.time[aria-pressed="true"] {
+  border-color: var(--color-pine);
+  background: var(--color-pine);
+  color: var(--color-paper);
+}
+
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 44px;
+  padding-block: 10px;
+}
+
+.choice input {
+  flex-shrink: 0;
+  margin-top: 4px;
+  accent-color: var(--color-pine);
+}
+
+.details {
+  display: grid;
+  gap: 10px;
+  border-block: 1px solid var(--color-rule);
+  padding-block: 16px;
+}
+
+.details div {
+  display: grid;
+  grid-template-columns: minmax(70px, auto) minmax(0, 1fr);
+  gap: 12px;
+}
+
+.details dd {
+  text-align: right;
+}
+
+.main :is(button, input, select):focus-visible {
+  outline: 2px solid var(--color-pine);
+  outline-offset: 3px;
+}

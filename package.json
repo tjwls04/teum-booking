@@ -1,0 +1,34 @@
+{
+  "name": "teum-booking-native",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "^24.22.3",
+    "npm": "^11.19.1"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "next typegen && tsc --noEmit",
+    "lint": "biome lint --error-on-warnings ."
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.119.2",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "web-push": "4.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.9",
+    "@tailwindcss/postcss": "4.3.5",
+    "@types/node": "24.19.4",
+    "@types/react": "19.3.3",
+    "@types/react-dom": "19.3.0",
+    "@types/web-push": "3.6.4",
+    "tailwindcss": "4.3.5",
+    "typescript": "6.0.3"
+  }
+}
